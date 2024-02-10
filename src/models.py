@@ -15,8 +15,7 @@ class User (db.Model):
         return {
             "id": self.id,
             "username": self.username,
-            "email": self.email,
-            "password": self.password
+            "email": self.email
         } 
 
 class People (db.Model):
@@ -73,3 +72,4 @@ class Favorite_Planet (db.Model):
             "user_id": self.user_id,
             "planet_id": self.planet_id
         } 
+
